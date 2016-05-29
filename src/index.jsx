@@ -1,16 +1,21 @@
 import React, {Component} from 'react'
-import {Router, Route} from 'react-router';
+import {render} from 'react-dom';
+import {Router, Route, browserHistory} from 'react-router';
+import About from './routes/about'
 import Home from './routes/home'
-import Layout from './components/layout'
 
-export default class Index extends Component {
+class App extends Component {
     constructor(props){
         super(props);
     }
     render(){
         return(
-            <Layout title="Daniel's Website">
-            </Layout>
+            <Router history={browserHistory}>
+                <Route path="/" component={Home}/>
+                <Route path="/about" component={About}/>
+            </Router>
         )
     }
 }
+
+render(<App/>, document.getElementById('app'));

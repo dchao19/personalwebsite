@@ -1,17 +1,17 @@
 var path = require('path');
-var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var BUILD_DIR = path.resolve(__dirname, 'build');
 var APP_DIR = path.resolve(__dirname, 'src');
 
-var paths = [
-    "/",
-    "/about"
-];
+var htmlConfig = new HtmlWebpackPlugin({
+  template: APP_DIR + '/index.html',
+  filename: 'index.html',
+  inject: 'body'
+});
+
 
 module.exports = {
-  entry:  {
-        main: APP_DIR + '/entry.js'
-  },
+  entry:  APP_DIR + '/index.jsx',
 
   resolve: {
       extensions: ['', '.js', '.jsx', '.scss']
@@ -19,8 +19,7 @@ module.exports = {
   
   output: {
     path: BUILD_DIR,
-    filename: 'bundle.js',
-    libraryTarget: 'umd'
+    filename: 'bundle.js'
   },
 
   module: {
@@ -29,8 +28,5 @@ module.exports = {
       { test: /\.scss$/, include: APP_DIR, loaders: ['style', 'css', 'sass']}
     ]
   },
-  
-  plugins: [
-      new StaticSiteGeneratorPlugin('main', paths)
-  ]
+  plugins: [htmlConfig]
 }

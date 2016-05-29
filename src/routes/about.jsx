@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import Layout from '../components/layout'
 
 export default class About extends Component {
     constructor(props){
@@ -8,9 +7,7 @@ export default class About extends Component {
     
     render(){
         return(
-            <Layout>
-                <h4>About!</h4>
-            </Layout>
+            <h4> About! </h4>
         )
     }
 }
