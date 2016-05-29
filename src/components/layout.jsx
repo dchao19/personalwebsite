@@ -8,7 +8,7 @@ export default class Layout extends Component {
             <html>
                 <head>
                     <title>{this.props.title}</title>
-                    <script src="bundle.js"></script>
+                    <script src="/bundle.js"></script>
                 </head>
                 <body>
                     {this.props.children}
