@@ -1,0 +1,24 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "Daniel's APCSA final project and portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dchao19/dchao19.github.io.git"
+  },
+  "author": "Daniel Chao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dchao19/dchao19.github.io/issues"
+  },
+  "homepage": "https://github.com/dchao19/dchao19.github.io#readme",
+  "devDependencies": {
+    "eslint": "^2.11.0",
+    "eslint-config-google": "^0.5.0",
+    "webpack": "^1.13.1"
+  }
+}
