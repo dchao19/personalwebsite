@@ -1,16 +1,15 @@
-import React, {Component} from 'react'
-import NavigationBar from '../components/navbar'
-import '../styles/home.scss'
+import React, {Component} from 'react';
+import Layout from '../components/layout';
 
-export default class Home extends Component {
-    constructor(props){
-        super(props);
-    }
-    render(){
-        return(
-            <div>
-                <NavigationBar/>
-            </div>
-        )
+class Home extends Component {
+    render() {
+        return (
+            <Layout jumboText="hi.">
+                <strong><h3>Hello!</h3></strong>
+                <p> Hi. I'm Daniel Chao, a freshman at Kent Denver School in Englewood, Colorado. I work at Readytalk as an extended-hire engineering intern. This website is also my AP Computer Science final project.</p>
+            </Layout>
+        );
     }
 }
+
+export default Home;

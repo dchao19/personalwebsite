@@ -1,0 +1,37 @@
+.nameHeader {
+    color: rgba(64, 62, 62, 0.9);
+    margin-left: 10px;
+    font-size: 15pt;
+}
+
+.navigation {
+    min-height: 50px;
+    margin-bottom: 15px;
+    background-color:#f8f8f8; 
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.headerLinks {
+    margin-left: auto;
+}
+.headerList {
+    margin: 0;
+    border: 0;
+    list-style: none;
+}
+
+.navListItem {
+    display: inline !important;
+    margin-right: 20px;
+}
+
+.navItem {
+    color: rgba(64, 62, 62, 0.7) !important;
+}
+
+.navItem:hover {
+    color: rgba(64, 62, 62, 1) !important;
+    text-decoration: none;
+}

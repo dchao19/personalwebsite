@@ -1,0 +1,29 @@
+.container {
+    padding-top: 20px;
+    max-width: 680px;
+    margin-bottom: 30px;
+}
+
+
+#jumbo {
+    display: flex;
+    justify-content: center;
+    background-color: #36FFA5;
+    border-radius: 5px
+}
+
+#jumboHeader {
+    color: white;
+}
+
+@media (min-width: 500px){
+    .container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 400px){
+    .container {
+        width: 85%;
+    }
+}
