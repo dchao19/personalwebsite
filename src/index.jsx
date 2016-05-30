@@ -5,6 +5,7 @@ import About from './routes/about';
 import Home from './routes/home';
 import Projects from './routes/projects';
 import APIStatus from './routes/apistatus';
+import Connect from './routes/connect';
 
 class App extends Component {
     render() {
@@ -14,6 +15,7 @@ class App extends Component {
                 <Route path="/about" component={About}/>
                 <Route path="/projects" component={Projects}/>
                 <Route path="/apistatus" component={APIStatus}/>
+                <Route path="/connect" component={Connect}/>
             </Router>
         );
     }
