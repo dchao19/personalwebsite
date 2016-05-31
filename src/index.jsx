@@ -6,6 +6,7 @@ import Home from './routes/home';
 import Projects from './routes/projects';
 import APIStatus from './routes/apistatus';
 import Connect from './routes/connect';
+import './styles/application';
 
 class App extends Component {
     render() {

@@ -10,7 +10,7 @@ class Footer extends Component {
                 <span> - Made with </span>
                 <a href="https://facebook.github.io/react">React</a>
                 <span> and </span>
-                <a href="https://github.com/react-router/react-router">react-router</a>
+                <a href="https://github.com/reactjs/react-router">react-router</a>
             </div>
         );
     }
