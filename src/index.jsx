@@ -4,7 +4,7 @@ import {Router, Route, browserHistory} from 'react-router';
 import About from './routes/about';
 import Home from './routes/home';
 import Projects from './routes/projects';
-import APIStatus from './routes/apistatus';
+import Blog from './routes/blog';
 import Connect from './routes/connect';
 import './styles/application';
 
@@ -15,7 +15,7 @@ class App extends Component {
                 <Route path="/" component={Home}/>
                 <Route path="/about" component={About}/>
                 <Route path="/projects" component={Projects}/>
-                <Route path="/apistatus" component={APIStatus}/>
+                <Route path="/blog" component={Blog}/>
                 <Route path="/connect" component={Connect}/>
             </Router>
         );

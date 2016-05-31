@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import Layout from '../components/layout.jsx';
 
-class APIStatus extends Component {
+class Blog extends Component {
     render() {
         return (
-            <Layout jumboText="status.">
+            <Layout jumboText="blog.">
             </Layout>
         );
     }
 }
 
-export default APIStatus;
+export default Blog;
