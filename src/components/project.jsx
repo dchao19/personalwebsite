@@ -13,7 +13,6 @@ class ProjectRow extends Component {
                 <div className="projectInfo">
                     <h4><strong>{this.props.title}</strong></h4>
                     <p><i>{this.props.description}</i></p>
-                    <img src={this.props.screenshot}/>
                 </div>
             </div>
         );

@@ -9,7 +9,7 @@ prompts.question("Enter the blog username: ", function(username) {
             prompts.question("Enter the title of the blog post: ", function(title) {
                 prompts.question("Enter the tags, separated by a comma with no space", function(tags) {
                     prompts.question("Enter a brief, text only description of the article", function(description) {
-                        var request = unirest("POST", "http://localhost:3000/blog/posts/new");
+                        var request = unirest("POST", "http://dchaowebsiteapi.azurewebsites.net/blog/posts/new");
                         request.type("json");
                         console.log("Uploading...");
                         fs.readFile(filename, 'utf8', function(err, data) {

@@ -3,6 +3,7 @@ var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 var BUILD_DIR = path.resolve(__dirname, 'build');
 var APP_DIR = path.resolve(__dirname, 'src');
 
@@ -52,7 +53,10 @@ module.exports = {
         new webpack.ProvidePlugin({
             "window.Tether": "tether"
         }),
-        new ExtractTextPlugin("styles.css")
+        new ExtractTextPlugin("styles.css"),
+        new CopyWebpackPlugin([
+            {from: APP_DIR + '/images', to: BUILD_DIR + '/images'}
+        ])
     ],
 
     postcss: [autoprefixer]
