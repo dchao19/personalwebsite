@@ -6,6 +6,7 @@ import Home from './routes/home';
 import Projects from './routes/projects';
 import Blog from './routes/blog';
 import Connect from './routes/connect';
+import Post from './routes/post';
 import './styles/application';
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
                 <Route path="/projects" component={Projects}/>
                 <Route path="/blog" component={Blog}/>
                 <Route path="/connect" component={Connect}/>
+                <Route path="/posts/:id" component={Post}/>
             </Router>
         );
     }

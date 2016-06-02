@@ -1,0 +1,41 @@
+.blogEntryContainer {
+    margin: 15px 15px 15px 15px;
+}
+ 
+.blogEntry {
+    cursor: pointer;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+.blogEntry:hover {
+    background-color: lightgray;
+}
+
+.entryTags {
+    color: #8E8E8E    
+    
+}
+  
+.entryTitle {
+    font-weight: bold;
+    margin-bottom: 0.7em;
+}
+
+.postedBy {
+    color: #8E8E8E; 
+}
+   
+.onText {
+    color: #8E8E8E
+}
+
+
+.entryDate {
+    color: #34AB76;
+}
+
+.entryContent {
+    line-height: 2.4;
+    color: rgba(0, 0, 0, 0.75)
+}

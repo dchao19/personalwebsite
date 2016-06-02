@@ -32,6 +32,7 @@ module.exports = {
 
     module: {
         loaders: [
+            {test: /\.json$/, loader: 'json'},
            {test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', ['css', 'postcss'])},
            {test: /\.scss$/, include: APP_DIR, loader: ExtractTextPlugin.extract('style', ['css', 'postcss', 'sass'])},
            {test: /\.jsx?$/, include: APP_DIR, loader: 'babel'},
