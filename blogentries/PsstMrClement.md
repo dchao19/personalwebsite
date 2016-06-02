@@ -1,4 +1,5 @@
-### Hello, world!
+![cat meme](/images/cathello.jpg)
+
 This blog entry doesn't actually have any content in it, which is nice. I'd figured that I would let my CS teacher know about how I actually ended up making this website in the most complicated manner possible. For the record, you can view the source code for this website at [the github project](https://github.com/dchao19/personalwebsite). Here is a list of the tools I've used to created this project.
 * **Front end**
   * React, React-Router, React-Bootstrap
@@ -7,7 +8,7 @@ This blog entry doesn't actually have any content in it, which is nice. I'd figu
   * jQuery (for neater http requests)
 * **Build Tooling**
   * Webpack, with the following loaders
-    * __Style: __ bootstrap-loader, style-loader, css-loader, postcss-loader, style-loader
+    * __Style:__ bootstrap-loader, style-loader, css-loader, postcss-loader, style-loader
     * __JSX/React:__ import-loader, json-loader, babel-loader
     * __Others:__ file-loader, font-awesome-loader, find-url-loader 
   * Babel, with the following plugins
@@ -41,3 +42,5 @@ So that's what I ended up doing. Instead of saving raw text or HTML, all of the 
 
 ### Why not render it server-side?
 Well I was planning to serve static pages, decided it was too much of a pain and too verbose and switched to straight React. This was before I decided to create a backend. Server-side rendering in React and Express is not easy and I didn't want to rewrite the stateful components of the website. 
+
+![cat bye meme](/images/catbye.jpg)
