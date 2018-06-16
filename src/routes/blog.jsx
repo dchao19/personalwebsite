@@ -16,7 +16,7 @@ class Blog extends Component {
     }
 
     fetchPosts() {
-        $.get('http://dchaowebsiteapi.azurewebsites.net/blog/posts', data => {
+        $.get('https://dchaowebsiteapi.azurewebsites.net/blog/posts', data => {
             this.setState({
                 posts: data.result,
                 isLoading: false
